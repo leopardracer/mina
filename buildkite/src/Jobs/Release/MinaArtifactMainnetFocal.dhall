@@ -24,12 +24,13 @@ in  Pipeline.build
             , Artifacts.Type.ZkappTestTransaction
             ]
           , debVersion = DebianVersions.DebVersion.Focal
-          , networks = [ Network.Type.Devnet, Network.Type.Mainnet ]
+          , networks = [ Network.Type.Mainnet ]
           , tags =
             [ PipelineTag.Type.Long
             , PipelineTag.Type.Release
             , PipelineTag.Type.Stable
             ]
           , mode = PipelineMode.Type.Stable
+          , prefix = "MinaArtifactMainnet"
           }
       )
