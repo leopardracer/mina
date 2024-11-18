@@ -8,7 +8,7 @@ source ./scripts/export-git-env-vars.sh
 # calculate GITBRANCH on its own
 export GITBRANCH=$BUILDKITE_BRANCH 
 
-export BUILD_NUM=${BUILDKITE_BUILD_NUM}
+export BUILD_NUM=${BUILDKITE_BUILD_NUMBER}
 export BUILD_URL=${BUILDKITE_BUILD_URL}
 
 source ./buildkite/script/handle-fork.sh
