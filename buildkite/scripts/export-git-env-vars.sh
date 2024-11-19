@@ -11,4 +11,4 @@ export GITBRANCH=$BUILDKITE_BRANCH
 export BUILD_NUM=${BUILDKITE_BUILD_NUMBER}
 export BUILD_URL=${BUILDKITE_BUILD_URL}
 
-source ./buildkite/script/handle-fork.sh
+source ./buildkite/scripts/handle-fork.sh
