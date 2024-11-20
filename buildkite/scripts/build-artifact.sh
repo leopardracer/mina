@@ -6,6 +6,8 @@ set -eox pipefail
 
 source ~/.profile
 
+MINA_COMMIT_SHA1=$(git rev-parse HEAD)
+
 # Somehow defining DUNE_INSTRUMENT_WITH in docker is not enough to propagate it to dune
 # That's why we are converting it to dune argument
 if [[ -v DUNE_INSTRUMENT_WITH ]]; then
